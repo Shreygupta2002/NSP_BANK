@@ -8,21 +8,21 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="537dp"
-        android:layout_height="207dp"
+        android:layout_width="326dp"
+        android:layout_height="88dp"
         android:layout_marginTop="50dp"
         android:gravity="center"
         android:text="WELCOME TO NSP BANK"
-        android:textSize="60sp"
+        android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/button"
-        android:layout_width="363dp"
-        android:layout_height="116dp"
-        android:layout_marginTop="80dp"
+        android:layout_width="319dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="60dp"
         android:onClick="onClick1"
         android:text="PRESS IF YOU ARE ADMIN"
         android:textSize="20sp"
@@ -32,9 +32,9 @@
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="363dp"
-        android:layout_height="116dp"
-        android:layout_marginTop="100dp"
+        android:layout_width="296dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="50dp"
         android:text="PRESS IF YOUR EMPLOYEE"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -43,12 +43,13 @@
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="363dp"
-        android:layout_height="116dp"
-        android:layout_marginTop="52dp"
+        android:layout_width="281dp"
+        android:layout_height="103dp"
+        android:layout_marginTop="50dp"
         android:text="PRESS IF YOU ARE AN ACCOUNT HOLDER"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button2" />
 </androidx.constraintlayout.widget.ConstraintLayout>
