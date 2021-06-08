@@ -30,6 +30,7 @@ public class Admin extends AppCompatActivity {
 //            intent.putExtra("EMPLOYEE", (Serializable) employees);
             Bundle bundle = new Bundle();
             bundle.putParcelableArrayList("data", (ArrayList<? extends Parcelable>) employees1);
+            bundle.putParcelableArrayList("data1", (ArrayList<? extends Parcelable>) peoples1);
             intent.putExtras(bundle);
             startActivity(intent);
         }
@@ -41,6 +42,7 @@ public class Admin extends AppCompatActivity {
     }
 //    Intent intent =getIntent();
     List <employee> employees1;
+    List<people>peoples1;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,6 +50,7 @@ public class Admin extends AppCompatActivity {
         Intent intent =getIntent();
         Bundle bundle = getIntent().getExtras();
         employees1=bundle.getParcelableArrayList("data");
+        peoples1=bundle.getParcelableArrayList("data1");
 //        employees = (List<employee>) getIntent().getSerializableExtra("Employee");
     }
 }

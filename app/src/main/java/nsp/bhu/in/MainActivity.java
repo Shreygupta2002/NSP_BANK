@@ -17,9 +17,12 @@ public class MainActivity extends AppCompatActivity {
     {
         Intent intent = new Intent(this,Admin.class);
         Bundle bundle = new Bundle();
+//        Bundle bundle1=new Bundle();
         bundle.putParcelableArrayList("data", (ArrayList<? extends Parcelable>) employees);
+        bundle.putParcelableArrayList("data1",(ArrayList<? extends Parcelable>) peoples);
 //        intent.putExtra("EMPLOYEE", (Serializable) employees);
         intent.putExtras(bundle);
+//        intent.putExtra(bundle1);
         startActivity(intent);
     }
     List<employee> employees = new ArrayList<employee>();

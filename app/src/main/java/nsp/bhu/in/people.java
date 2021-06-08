@@ -1,9 +1,12 @@
 package nsp.bhu.in;
 
+import android.os.Parcel;
+import android.os.Parcelable;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class people {
+public class people implements Parcelable {
     private String name;
     private String account_number;
     private double balance;
@@ -31,6 +34,25 @@ public class people {
         // System.out.println(p1);
     }
 
+    protected people(Parcel in) {
+        name = in.readString();
+        account_number = in.readString();
+        balance = in.readDouble();
+        passbook = in.createStringArrayList();
+    }
+
+    public static final Creator<people> CREATOR = new Creator<people>() {
+        @Override
+        public people createFromParcel(Parcel in) {
+            return new people(in);
+        }
+
+        @Override
+        public people[] newArray(int size) {
+            return new people[size];
+        }
+    };
+
     public void deposit(double amount) {
         this.balance += amount;
         String p1 = String.valueOf(amount) + " has been added succesfully !!! NEW BALANCE IS "
@@ -54,11 +76,14 @@ public class people {
         }
     }
 
-    void view_details() {
-        System.out.println("NAME : " + this.name);
-        System.out.println("ACCOUNT NO. : " + this.account_number);
-        System.out.println("CURRENT BALANCE = " + this.balance);
-        System.out.println("");
+    public String view_details() {
+        String ans="NAME : " + this.name+"\n"+"ACCOUNT NO. : " + this.account_number
+                +"\n"+"CURRENT BALANCE = " + this.balance+"\n";
+//        System.out.println("NAME : " + this.name);
+//        System.out.println("ACCOUNT NO. : " + this.account_number);
+//        System.out.println("CURRENT BALANCE = " + this.balance);
+//        System.out.println("");
+        return ans;
     }
 
     void view_passbook() {
@@ -69,5 +94,18 @@ public class people {
 
     public String getAccountNo() {
         return this.account_number;
+    }
+
+    @Override
+    public int describeContents() {
+        return 0;
+    }
+
+    @Override
+    public void writeToParcel(Parcel dest, int flags) {
+        dest.writeString(name);
+        dest.writeString(account_number);
+        dest.writeDouble(balance);
+        dest.writeStringList(passbook);
     }
 }
