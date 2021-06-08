@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.NSPBANK">
-        <activity android:name=".Admin1" android:parentActivityName=".MainActivity"></activity>
+        <activity
+            android:name=".Admin_funct1" />
+        <activity
+            android:name=".Admin1"
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".Admin"
             android:parentActivityName=".MainActivity" />

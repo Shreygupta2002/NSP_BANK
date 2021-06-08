@@ -12,6 +12,7 @@
         android:layout_width="273dp"
         android:layout_height="102dp"
         android:layout_marginTop="50dp"
+        android:onClick="onClick"
         android:text="VIEW DEATILS OF EMPLOYEES"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
