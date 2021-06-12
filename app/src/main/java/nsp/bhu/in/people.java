@@ -64,7 +64,7 @@ public class people implements Parcelable {
 
     }
 
-    void withdrawl(double amount) {
+    public void withdrawl(double amount) {
         if (amount > this.balance) {
             System.out.println("TRANSACTION FAILED!! INSUFFICIENT BALANCE");
         } else {
@@ -86,7 +86,7 @@ public class people implements Parcelable {
         return ans;
     }
 
-    void view_passbook() {
+    public void view_passbook() {
         for (int i = 0; i < passbook.size(); i++) {
             System.out.println(passbook.get(i));
         }
