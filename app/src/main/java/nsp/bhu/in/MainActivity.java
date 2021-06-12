@@ -107,8 +107,10 @@ public class MainActivity extends AppCompatActivity {
         }
         else
         {
+            emppos=pos;
             textView.setText("ID FOUND!!!");
             setContentView(R.layout.employee2);
+
         }
     }
     public void onClick10(View view)
@@ -116,9 +118,21 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.employee1);
     }
 
+    public void onClick14(View view) {
+        setContentView(R.layout.employee3);
+        TextView textView=(TextView) (findViewById(R.id.textView14));
+        textView.setText(employees.get(emppos).display_details());
+    }
+
+    public void onClick15(View view) {
+        setContentView(R.layout.employee2);
+    }
 
     List<employee> employees = new ArrayList<employee>();
     List<people> peoples = new ArrayList<people>();
+
+
+    int emppos;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
