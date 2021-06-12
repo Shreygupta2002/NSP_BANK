@@ -170,15 +170,16 @@ public class MainActivity extends AppCompatActivity {
             setContentView(R.layout.people_1);
         }
     }
-
+    public void onClick20(View view)
+    {
+        setContentView(R.layout.people_3);
+    }
     public void onClick18(View view){
         EditText editText = (EditText)(findViewById(R.id.editTextTextPersonName7));
         double value=Double.parseDouble(editText.getText().toString());
         String temp= peoples.get(pepos).deposit(value);
         TextView textView = (TextView)(findViewById(R.id.textView17));
         textView.setText(temp);
-
-
     }
 
     public void onClick19(View view){
