@@ -144,12 +144,55 @@ public class MainActivity extends AppCompatActivity {
     public void onClick15(View view) {
         setContentView(R.layout.employee2);
     }
+    public void onClick16(View view)
+    {
+        setContentView(R.layout.people);
+    }
+    public void onClick17(View view)
+    {
+        String account_number=((EditText)(findViewById(R.id.editTextTextPersonName6))).getText().toString();
+        int pos=-1;
+        for (int i = 0; i < peoples.size(); i++) {
+            if ((peoples.get(i).getAccountNo()).equals(account_number)) {
+                pos = i;
+                break;
+            }
+        }
+        TextView textView=(TextView)(findViewById(R.id.textView16));
+        if(pos==-1)
+        {
+            textView.setText("NO ACCOUNT FOUND");
+        }
+        else
+        {
+            pepos=pos;
+            textView.setText("ACCOUNT FOUND!!!");
+            setContentView(R.layout.people_1);
+        }
+    }
+    public void onClick20(View view)
+    {
+        setContentView(R.layout.people_3);
+    }
+    public void onClick18(View view){
+        EditText editText = (EditText)(findViewById(R.id.editTextTextPersonName7));
+        double value=Double.parseDouble(editText.getText().toString());
+        String temp= peoples.get(pepos).deposit(value);
+        TextView textView = (TextView)(findViewById(R.id.textView17));
+        textView.setText(temp);
+    }
+
+    public void onClick19(View view){
+        setContentView(R.layout.people_1);
+    }
+
 
     List<employee> employees = new ArrayList<employee>();
     List<people> peoples = new ArrayList<people>();
 
 
     int emppos;
+    int pepos;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

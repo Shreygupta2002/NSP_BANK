@@ -53,14 +53,16 @@ public class people implements Parcelable {
         }
     };
 
-    public void deposit(double amount) {
+    public String deposit(double amount) {
         this.balance += amount;
         String p1 = String.valueOf(amount) + " has been added succesfully !!! NEW BALANCE IS "
 
                 + String.valueOf(this.balance);
         passbook.add(p1);
 
-        System.out.println(p1);
+        return p1;
+
+        //System.out.println(p1);
 
     }
 

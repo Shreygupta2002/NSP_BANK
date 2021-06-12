@@ -50,6 +50,7 @@
         android:layout_width="281dp"
         android:layout_height="103dp"
         android:layout_marginTop="50dp"
+        android:onClick="onClick16"
         android:text="PRESS IF YOU ARE AN ACCOUNT HOLDER"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
