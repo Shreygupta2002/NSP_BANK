@@ -185,6 +185,24 @@ public class MainActivity extends AppCompatActivity {
     public void onClick19(View view){
         setContentView(R.layout.people_1);
     }
+    public void onClick21(View view)
+    {
+        setContentView(R.layout.people_2);
+        TextView textView=(TextView)(findViewById(R.id.textView12));
+        textView.setText(peoples.get(pepos).view_passbook());
+    }
+    public void onClick22(View view)
+    {
+        setContentView(R.layout.people_4);
+    }
+    public void onClick23(View view)
+    {
+        EditText editText = (EditText)(findViewById(R.id.editTextTextPersonName8));
+        double value=Double.parseDouble(editText.getText().toString());
+        String temp= peoples.get(pepos).withdrawl(value);
+        TextView textView = (TextView)(findViewById(R.id.textView20));
+        textView.setText(temp);
+    }
 
 
     List<employee> employees = new ArrayList<employee>();
