@@ -6,25 +6,99 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Parcelable;
 import android.view.View;
+import android.widget.EditText;
+import android.widget.TextView;
 
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
-
 public class MainActivity extends AppCompatActivity {
 
     public void onClick1(View view)
     {
-        Intent intent = new Intent(this,Admin.class);
-        Bundle bundle = new Bundle();
-//        Bundle bundle1=new Bundle();
-        bundle.putParcelableArrayList("data", (ArrayList<? extends Parcelable>) employees);
-        bundle.putParcelableArrayList("data1",(ArrayList<? extends Parcelable>) peoples);
-//        intent.putExtra("EMPLOYEE", (Serializable) employees);
-        intent.putExtras(bundle);
-//        intent.putExtra(bundle1);
-        startActivity(intent);
+//        Intent intent = new Intent(this,Admin.class);
+//        Bundle bundle = new Bundle();
+////        Bundle bundle1=new Bundle();
+//        bundle.putParcelableArrayList("data", (ArrayList<? extends Parcelable>) employees);
+//        bundle.putParcelableArrayList("data1",(ArrayList<? extends Parcelable>) peoples);
+////        intent.putExtra("EMPLOYEE", (Serializable) employees);
+//        intent.putExtras(bundle);
+////        intent.putExtra(bundle1);
+//        startActivity(intent);
+        setContentView(R.layout.admin);
     }
+    public void onClick2(View view)
+    {
+        String pass="123456789";
+        EditText editText=(EditText)(findViewById(R.id.pass));
+        String password=editText.getText().toString();
+        TextView textView=(TextView)(findViewById(R.id.textView3));
+        if(password.equals(pass))
+        {
+            textView.setText("CORRECT PASSWORD");
+//            Intent intent = new Intent(this,Admin1.class);
+////            intent.putExtra("EMPLOYEE", (Serializable) employees);
+//            Bundle bundle = new Bundle();
+//            bundle.putParcelableArrayList("data", (ArrayList<? extends Parcelable>) employees1);
+//            bundle.putParcelableArrayList("data1", (ArrayList<? extends Parcelable>) peoples1);
+//            intent.putExtras(bundle);
+//            startActivity(intent);
+            setContentView(R.layout.admin_1);
+        }
+        else
+        {
+            textView.setText("INVALID PASSWORD");
+        }
+    }
+    public void onClick3(View view)
+    {
+        setContentView(R.layout.admin_2);
+        TextView textView=(TextView)(findViewById(R.id.text1));
+        String s="DETAILS OF EMPLOYEES"+"\n"+"\n";
+        for (int i = 0; i < employees.size(); i++) {
+            s=s.concat(employees.get(i).display_details());
+            s=s.concat("----- \n");
+            s=s.concat("----- \n");
+        }
+        textView.setText(s);
+    }
+    public void onClick4(View view)
+    {
+        setContentView(R.layout.admin_1);
+    }
+    public void onClick5(View view)
+    {
+        setContentView(R.layout.admin_3);
+        TextView textView=(TextView)(findViewById(R.id.textView5));
+        String s="DETAILS OF ALL ACCOUNTS"+"\n"+"\n";
+        for (int i = 0; i < peoples.size(); i++) {
+            s=s.concat(peoples.get(i).view_details());
+            s=s.concat("----- \n");
+            s=s.concat("----- \n");
+        }
+        textView.setText(s);
+    }
+    public void onClick6(View view)
+    {
+        setContentView(R.layout.admin_4);
+    }
+    public void onClick7(View view)
+    {
+        String name=((EditText)(findViewById(R.id.editTextTextPersonName))).getText().toString();
+        String id=((EditText)(findViewById(R.id.editTextTextPersonName2))).getText().toString();
+        String desig=((EditText)(findViewById(R.id.editTextTextPersonName3))).getText().toString();
+        int age=Integer.parseInt(((EditText)(findViewById(R.id.editTextNumber))).getText().toString());
+        employee temp=new employee(name,id,desig,age);
+        employees.add(temp);
+        TextView editText=(TextView)(findViewById(R.id.textView9));
+        editText.setText("SUCCESSFULLY ADDED!!!!");
+//        setContentView(R.layout.admin_1);
+    }
+    public void onClick8(View view)
+    {
+        setContentView(R.layout.activity_main);
+    }
+
     List<employee> employees = new ArrayList<employee>();
     List<people> peoples = new ArrayList<people>();
     @Override

@@ -32,6 +32,17 @@ public class Admin1 extends AppCompatActivity {
         intent.putExtras(bundle);
         startActivity(intent);
     }
+    public void onClick2(View view)
+    {
+        Intent intent = new Intent(this,Admin_func3.class);
+//        intent.putExtra("EMPLOYEE", (Serializable) employees);
+        Bundle bundle = new Bundle();
+        bundle.putParcelableArrayList("data", (ArrayList<? extends Parcelable>) employees2);
+//        bundle.putParcelableArrayList("data", (ArrayList<? extends Parcelable>) peoples2);
+//        bundle.putParcelableArrayList("data1", (ArrayList<? extends Parcelable>) peoples2);
+        intent.putExtras(bundle);
+        startActivity(intent);
+    }
     List<employee> employees2;
     List<employee> peoples2;
     @Override

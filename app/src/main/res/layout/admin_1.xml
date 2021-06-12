@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#1DE9B6"
+        tools:context=".Admin1">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="273dp"
+                    android:layout_height="102dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="50dp"
+                    android:onClick="onClick3"
+                    android:text="VIEW DEATILS OF EMPLOYEES" />
+
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_width="273dp"
+                    android:layout_height="102dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="60dp"
+                    android:onClick="onClick5"
+                    android:text="VIEW DETAILS OF ALL ACCOUNTS" />
+
+                <Button
+                    android:id="@+id/button7"
+                    android:layout_width="273dp"
+                    android:layout_height="102dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="60dp"
+                    android:onClick="onClick6"
+                    android:text="ADD A NEW EMPLOYEE" />
+
+                <Button
+                    android:id="@+id/button9"
+                    android:layout_width="273dp"
+                    android:layout_height="102dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="60dp"
+                    android:onClick="onClick8"
+                    android:text="Click To Go Back" />
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

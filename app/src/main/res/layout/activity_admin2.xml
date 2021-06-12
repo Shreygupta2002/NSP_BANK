@@ -34,6 +34,7 @@
         android:layout_width="273dp"
         android:layout_height="102dp"
         android:layout_marginTop="100dp"
+        android:onClick="onClick2"
         android:text="ADD A NEW EMPLOYEE"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
