@@ -115,6 +115,23 @@ public class MainActivity extends AppCompatActivity {
     {
         setContentView(R.layout.employee1);
     }
+    public void onClick11(View view)
+    {
+        setContentView(R.layout.employee4);
+    }
+    public void onClick12(View view)
+    {
+        String name=((EditText)(findViewById(R.id.editTextTextPersonName4))).getText().toString();
+        double balance=Double.parseDouble(((EditText)(findViewById(R.id.editTextTextPersonName5))).getText().toString());
+        people p=new people(name,balance);
+        peoples.add(p);
+        TextView editText=(TextView)(findViewById(R.id.textView15));
+        editText.setText("SUCCESSFULLY ADDED!!!!");
+    }
+    public void onClick13(View view)
+    {
+        setContentView(R.layout.employee2);
+    }
 
 
     List<employee> employees = new ArrayList<employee>();
