@@ -16,15 +16,6 @@ public class MainActivity extends AppCompatActivity {
 
     public void onClick1(View view)
     {
-//        Intent intent = new Intent(this,Admin.class);
-//        Bundle bundle = new Bundle();
-////        Bundle bundle1=new Bundle();
-//        bundle.putParcelableArrayList("data", (ArrayList<? extends Parcelable>) employees);
-//        bundle.putParcelableArrayList("data1",(ArrayList<? extends Parcelable>) peoples);
-////        intent.putExtra("EMPLOYEE", (Serializable) employees);
-//        intent.putExtras(bundle);
-////        intent.putExtra(bundle1);
-//        startActivity(intent);
         setContentView(R.layout.admin);
     }
     public void onClick2(View view)
@@ -98,6 +89,33 @@ public class MainActivity extends AppCompatActivity {
     {
         setContentView(R.layout.activity_main);
     }
+    public void onClick9(View view)
+    {
+        EditText editText=(EditText)(findViewById(R.id.enter_id));
+        String Temp=editText.getText().toString();
+        int pos=-1;
+        for (int i = 0; i < employees.size(); i++) {
+            if ((employees.get(i).getEmployeeId()).equals(Temp)) {
+                pos = i;
+                break;
+            }
+        }
+        TextView textView=(TextView) (findViewById(R.id.textView11));
+        if(pos==-1)
+        {
+            textView.setText("INVALID ID");
+        }
+        else
+        {
+            textView.setText("ID FOUND!!!");
+            setContentView(R.layout.employee2);
+        }
+    }
+    public void onClick10(View view)
+    {
+        setContentView(R.layout.employee1);
+    }
+
 
     List<employee> employees = new ArrayList<employee>();
     List<people> peoples = new ArrayList<people>();
