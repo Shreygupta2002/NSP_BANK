@@ -15,16 +15,16 @@
 
             <TextView
                 android:id="@+id/textView14"
-                android:layout_width="330dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="100dp"
-                android:textSize="48sp" />
+                android:textSize="24sp" />
 
             <Button
                 android:id="@+id/button17"
                 android:layout_width="335dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="100dp"
+                android:layout_marginTop="50dp"
                 android:onClick="onClick15"
                 android:text="PRESS TO GO BACK" />
         </LinearLayout>
