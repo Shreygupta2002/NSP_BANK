@@ -30,12 +30,17 @@
                     android:id="@+id/text1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:textSize="10sp" />
+                    android:background="#FFEA00"
+                    android:backgroundTint="#FFEA00"
+                    android:textColor="#07525A"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
 
                 <Button
                     android:id="@+id/button10"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:backgroundTint="#07525A"
                     android:onClick="onClick4"
                     android:text="Press To Go Back" />
             </LinearLayout>

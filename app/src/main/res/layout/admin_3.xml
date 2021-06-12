@@ -29,12 +29,17 @@
                 <TextView
                     android:id="@+id/textView5"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
+                    android:layout_height="wrap_content"
+                    android:background="#FFEA00"
+                    android:backgroundTint="#FFEA00"
+                    android:textColor="#07525A"
+                    android:textStyle="bold" />
 
                 <Button
                     android:id="@+id/button11"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:backgroundTint="#07525A"
                     android:onClick="onClick4"
                     android:text="Click To Go Back" />
             </LinearLayout>

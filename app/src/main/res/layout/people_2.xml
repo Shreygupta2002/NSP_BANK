@@ -22,7 +22,10 @@
                 android:layout_width="279dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
-                android:layout_marginTop="100dp" />
+                android:layout_marginTop="100dp"
+                android:background="#FFEA00"
+                android:backgroundTint="#FFEA00"
+                android:textColor="#07525A" />
 
             <Button
                 android:id="@+id/button23"
@@ -30,6 +33,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="30dp"
                 android:layout_marginTop="50dp"
+                android:backgroundTint="#07525A"
                 android:onClick="onClick19"
                 android:text="PRESS TO GO BACK" />
         </LinearLayout>

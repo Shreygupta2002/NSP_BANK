@@ -12,7 +12,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
         android:text="ENTER YOUR ACCOUNT NO."
+        android:textColor="#FF3D00"
         android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -25,6 +27,7 @@
         android:ems="10"
         android:hint="Eg.NSP100020001"
         android:inputType="textPersonName"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView12" />
@@ -34,6 +37,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
+        android:backgroundTint="#07525A"
         android:onClick="onClick17"
         android:text="ENTER"
         app:layout_constraintEnd_toEndOf="parent"
@@ -45,6 +49,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
+        android:background="#FFEA00"
+        android:backgroundTint="#FFEA00"
+        android:textColor="#07525A"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button23" />

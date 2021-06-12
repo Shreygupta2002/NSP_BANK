@@ -25,7 +25,9 @@
                 android:layout_height="49dp"
                 android:layout_marginLeft="50dp"
                 android:text="ENTER YOUR NAME"
-                android:textSize="24sp" />
+                android:textColor="#FF3D00"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/editTextTextPersonName4"
@@ -35,7 +37,8 @@
                 android:layout_marginTop="30dp"
                 android:ems="10"
                 android:hint="Eg.Shyam"
-                android:inputType="textPersonName" />
+                android:inputType="textPersonName"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView14"
@@ -44,7 +47,9 @@
                 android:layout_marginLeft="50dp"
                 android:layout_marginTop="50dp"
                 android:text="ENTER INITIAL BALANCE"
-                android:textSize="24sp" />
+                android:textColor="#FF3D00"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/editTextTextPersonName5"
@@ -54,7 +59,8 @@
                 android:layout_marginTop="30dp"
                 android:ems="10"
                 android:hint="Eg.1000"
-                android:inputType="textPersonName" />
+                android:inputType="textPersonName"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/button17"
@@ -62,6 +68,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="50dp"
                 android:layout_marginTop="50dp"
+                android:backgroundTint="#07525A"
                 android:onClick="onClick12"
                 android:text="ENTER" />
 
@@ -71,7 +78,11 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="50dp"
                 android:layout_marginTop="30dp"
-                android:textSize="24sp" />
+                android:background="#FFEA00"
+                android:backgroundTint="#FFEA00"
+                android:textColor="#07525A"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/button18"
@@ -79,6 +90,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="50dp"
                 android:layout_marginTop="30dp"
+                android:backgroundTint="#07525A"
                 android:onClick="onClick13"
                 android:text="PRESS TO GO BACK" />
         </LinearLayout>

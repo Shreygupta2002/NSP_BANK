@@ -26,6 +26,7 @@
                     android:layout_height="102dp"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="50dp"
+                    android:backgroundTint="#07525A"
                     android:onClick="onClick3"
                     android:text="VIEW DEATILS OF EMPLOYEES" />
 
@@ -35,6 +36,7 @@
                     android:layout_height="102dp"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="60dp"
+                    android:backgroundTint="#07525A"
                     android:onClick="onClick5"
                     android:text="VIEW DETAILS OF ALL ACCOUNTS" />
 
@@ -44,6 +46,7 @@
                     android:layout_height="102dp"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="60dp"
+                    android:backgroundTint="#07525A"
                     android:onClick="onClick6"
                     android:text="ADD A NEW EMPLOYEE" />
 
@@ -53,6 +56,7 @@
                     android:layout_height="102dp"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="60dp"
+                    android:backgroundTint="#07525A"
                     android:onClick="onClick8"
                     android:text="Click To Go Back" />
             </LinearLayout>

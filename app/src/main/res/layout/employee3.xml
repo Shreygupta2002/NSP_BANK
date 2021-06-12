@@ -19,13 +19,18 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="100dp"
-                android:textSize="24sp" />
+                android:background="#FFEA00"
+                android:backgroundTint="#FFEA00"
+                android:textColor="#07525A"
+                android:textSize="24sp"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/button17"
                 android:layout_width="335dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="50dp"
+                android:backgroundTint="#07525A"
                 android:onClick="onClick15"
                 android:text="PRESS TO GO BACK" />
         </LinearLayout>

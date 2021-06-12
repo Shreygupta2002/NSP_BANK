@@ -13,7 +13,9 @@
         android:layout_marginTop="200dp"
         android:gravity="center"
         android:text="ENTER YOUR ID"
+        android:textColor="#FF1744"
         android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -26,6 +28,7 @@
         android:ems="10"
         android:hint="Eg.40"
         android:inputType="textPersonName"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView10" />
@@ -35,6 +38,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
+        android:backgroundTint="#07525A"
         android:onClick="onClick9"
         android:text="ENTER"
         app:layout_constraintEnd_toEndOf="parent"
