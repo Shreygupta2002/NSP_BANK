@@ -66,16 +66,18 @@ public class people implements Parcelable {
 
     }
 
-    public void withdrawl(double amount) {
+    public String withdrawl(double amount) {
+        String ans="";
         if (amount > this.balance) {
-            System.out.println("TRANSACTION FAILED!! INSUFFICIENT BALANCE");
+            ans+="TRANSACTION FAILED!! INSUFFICIENT BALANCE";
         } else {
             this.balance -= amount;
             String p1 = "TRANSACTION SUCCESSFULL !! NEW BALANCE IS " + String.valueOf(this.balance);
             passbook.add(p1);
-
-            System.out.println(p1);
+            ans=p1;
+//            System.out.println(p1);
         }
+        return ans;
     }
 
     public String view_details() {
@@ -88,10 +90,12 @@ public class people implements Parcelable {
         return ans;
     }
 
-    public void view_passbook() {
+    public String view_passbook() {
+        String ans="";
         for (int i = 0; i < passbook.size(); i++) {
-            System.out.println(passbook.get(i));
+            ans=ans+passbook.get(i)+"\n"+"-----------"+"\n";
         }
+        return ans;
     }
 
     public String getAccountNo() {
