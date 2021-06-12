@@ -8,8 +8,8 @@
 
     <TextView
         android:id="@+id/textView12"
-        android:layout_width="150sp"
-        android:layout_height="30sp"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
         android:layout_marginTop="148dp"
         android:text="Enter Amount"
         android:textColor="#FF3D00"
@@ -54,6 +54,7 @@
         android:background="#FFEA00"
         android:backgroundTint="#FFEA00"
         android:textColor="#07525A"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
