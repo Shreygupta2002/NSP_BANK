@@ -124,7 +124,7 @@
 
                 <Button
                     android:id="@+id/button12"
-                    android:layout_width="117dp"
+                    android:layout_width="212dp"
                     android:layout_height="wrap_content"
                     android:onClick="onClick4"
                     android:text="Press To Go Back" />

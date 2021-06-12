@@ -22,13 +22,15 @@
                 android:id="@+id/textView13"
                 android:layout_width="368dp"
                 android:layout_height="49dp"
+                android:layout_marginLeft="50dp"
                 android:text="ENTER YOUR NAME"
-                android:textSize="34sp" />
+                android:textSize="24sp" />
 
             <EditText
                 android:id="@+id/editTextTextPersonName4"
-                android:layout_width="98dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
                 android:layout_marginTop="30dp"
                 android:ems="10"
                 android:hint="Eg.Shyam"
@@ -38,14 +40,16 @@
                 android:id="@+id/textView14"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
                 android:layout_marginTop="50dp"
                 android:text="ENTER INITIAL BALANCE"
-                android:textSize="34sp" />
+                android:textSize="24sp" />
 
             <EditText
                 android:id="@+id/editTextTextPersonName5"
-                android:layout_width="86dp"
+                android:layout_width="170dp"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
                 android:layout_marginTop="30dp"
                 android:ems="10"
                 android:hint="Eg.1000"
@@ -55,6 +59,7 @@
                 android:id="@+id/button17"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
                 android:layout_marginTop="50dp"
                 android:onClick="onClick12"
                 android:text="ENTER" />
@@ -63,6 +68,7 @@
                 android:id="@+id/textView15"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
                 android:layout_marginTop="30dp"
                 android:textSize="24sp" />
 
@@ -70,6 +76,7 @@
                 android:id="@+id/button18"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
                 android:layout_marginTop="30dp"
                 android:onClick="onClick13"
                 android:text="PRESS TO GO BACK" />
